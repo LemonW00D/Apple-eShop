@@ -1,0 +1,28 @@
+<template>
+  <div class="d-flex flex-row justify-content-between p-2">
+    <div class="d-flex flex-row justify-content-between flex-grow-1 p-2">
+      <span>{{ item.title }}</span>
+      <span><strong>{{ item.price | price }}</strong></span>
+    </div>
+    <button @click="removeItemFromCart" class="close ml-3">
+      <span>&times;</span>
+    </button>
+  </div>
+</template>
+
+<script>
+import { eventBus } from '../../../../main';
+
+export default {
+  props: [ 'item' ],
+  methods: {
+    removeItemFromCart() {
+      eventBus.removeItemFromCart({ ...this.item })
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>
