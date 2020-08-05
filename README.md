@@ -8,4 +8,4 @@ La partie "admin" permet d'ajouter de nouveaux produits au Shop via un formulair
 
 Pour voir un rendu, rendez-vous au lien suivant:
 
-https://eshop-vuejs-arnaud-tessier.netlify.app/shop
+https://eshop-vuejs-arnaud-tessier.netlify.app
